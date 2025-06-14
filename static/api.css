@@ -307,7 +307,7 @@ i#cloudy{
 .news_container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 11px;
     max-width: 1100px;
     width: 100%;
     margin: 30px auto 30px auto;
@@ -316,7 +316,7 @@ i#cloudy{
 
 
 .newscard1{
-    width: 640px;
+    width: 365px;
     height: 490px;
     background-color: #fff;
     box-shadow:  1px 3px 5px 1px #ced3da;
@@ -325,6 +325,18 @@ i#cloudy{
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
+}
+
+.newscard2{
+    
+}
+
+.img_overlay{
+    /* background-image: url(download.jfif); */
+    object-fit: cover;         /* Keeps aspect ratio and fills container */
+    width: 100%;
+    height: 100%;
+    transition: all ease-in .5s;
 }
 
 .first  p{
@@ -344,13 +356,45 @@ h1{
     border-radius: 12px;
 }
 .newscard2{
-    padding: 7px;
-    width: 300px;
+    position: relative;
+    width: 365px;
     height: 490px;
     background-color: #173e77;
-    box-shadow:  1px 3px 5px 1px #354255;
     border-radius: 12px;
+    display: flex;
+    overflow: hidden;
 }
+
+.newscard2:hover .img_overlay{
+    cursor: pointer;
+    transform: scale(1.19);
+}
+
+.newscard2:hover .img_overlay{
+    cursor: pointer;
+    transform: scale(1.19);
+}
+
+.heading-text{
+    position: absolute;
+    margin: 10px;
+}
+
+.heading-text p{
+    color: #322727;
+    font-family: "Sofia Sans", serif;
+    transition: text-decoration ease .3s ;
+}
+
+.main1{
+    
+}
+
+ .heading-text p::after{
+    content: "";
+    border-bottom: 2px ;
+}
+
 
 
 
