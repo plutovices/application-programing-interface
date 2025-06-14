@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+
+        <div class="top">
+            <div class="top_left">
+                <div class="logo" style="cursor: pointer;">QUERY</div>
+           </div>
+
+        <div class="top_center">
+            <form role="search" class="form_search" method="get">
+                <div class="input">
+                    <i class="fa-solid fa-magnifying-glass" style="padding-right: 9px;"></i>
+                    <input type="search" name="q" id="input_search" placeholder="Search for News, topics and sources.......">
+                </div>
+            
+            </form>
+            <div class="setting">
+                <i class="fa-regular fa-circle-question fa-xl" style="color: #fff;"></i>
+                <i class="fa-solid fa-ellipsis fa-xl" style="color: #fff;"></i>
+                
+            </div>
+        </div>
+        
+        <div class="top_right">
+            <a href="" >More</a>
+            <button>Sign in</button>
+        </div>
+           
+        </div>
+        <div class="bottom">
+            <div class="links">
+                <li>Home</li>
+                <li>For You</li>
+                <hr style="
+            height: 18px;
+            width: 0.5px;
+            ">
+            <li><a href="http://">Nigeria</a></li>
+            <li><a href="">Local</a></li>
+            <li><a href="">International</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Technology</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Health</a></li>
+            <li><a href="">Science</a></li>
+        </div>
+    </div>
+    
+
+    </nav>
+    </div>
+
+    <div class="intro_section">
+        <div class="text1">
+            <p style="font-weight: 700;">Your Briefing</p>
+            <p id="date"></p>
+        </div>
+        <div class="weather">
+            <div class="right_weather">
+                <div class="arrow">
+                    <i class="fa-solid fa-caret-up fa-rotate-270" id="arrow" style="color: #fff;">
+
+                    </i></div>
+                
+                <div class="sun">
+                    <i class="fa-solid fa-circle fa-xl" id="sunny" style="color: #e7bb1d; position: absolute; top: 31px; left: 15px;"></i>
+                   <i class="fa-solid fa-cloud fa-xl" id="cloudy" style="color: #ffffff; position: absolute; top: 40px; right: -14px;"></i>
+               </div>
+                
+            </div>
+            <div class="left_weather">
+                <div class="top_weather" style="font-size: 12px;"><p>Your local weather</p></div>
+                <div class="bottom_weather" style="font-size: 30px; font-weight: 500;">
+                    <p id="temperature"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="news_container">
+        <div class="newscard1">
+            <div class="header1" style="border-bottom: 1px #bbb solid;" ><h2 style="color: rgb(28, 60, 147); margin-bottom:20px; margin-top:10px;">Trending News</h2></div>
+            <div class="main">
+                <div class="first">
+                    <a href="" style=" width: 280px; height: 190px;  border-radius: 11px;"> <img style="width: 280px; height: 190px; border-radius: 11px; border: 3px solid #ff2323; margin-top: 14px;"  src="up_Majorana1_" alt="news image"></a>
+                    <a href="" style=" display: block;  width: 280px; text-decoration: none; "><p style="color: black; font-size: 29px;"> Quantum Computing: </p></a>
+                    <a href="" style=" display: block;  width: 280px; text-decoration: none; "><p style="color: black; font-size: 29px;">Microsoft announces quantum breakthrough with Majorana1 </p></a>
+                </div>
+                <div class="second"></div>
+            </div>
+            <div class="submain">
+                 <div class="side_piece"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div class="newscard2"></div>
+      </div>
+    </section>
+
+      <section class="news_container">
+        <div class="newscard3"></div>
+    </section>
+
+    <section class="news_container">
+        <div class="newscard1"></div>
+        <div class="newscard2"></div>
+      </div>
+    </section> 
+
+  
+    
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero corporis hic ducimus ullam asperiores nostrum! Explicabo minus blanditiis iure cum maiores, temporibus, ab laborum, enim alias cumque eius magni! Ipsam illo veritatis in corporis odio sint voluptatum labore eaque cupiditate saepe, beatae tenetur excepturi molestias porro deserunt laudantium sapiente ducimus veniam. Esse voluptatem necessitatibus tempore, sequi qui impedit ut in maxime laborum provident odio, numquam ea et asperiores unde nemo totam optio voluptatibus architecto magnam, animi quae nulla!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero corporis hic ducimus ullam asperiores nostrum! Explicabo minus blanditiis iure cum maiores, temporibus, ab laborum, enim alias cumque eius magni! Ipsam illo veritatis in corporis odio sint voluptatum labore eaque cupiditate saepe, beatae tenetur excepturi molestias porro deserunt laudantium sapiente ducimus veniam. Esse voluptatem necessitatibus tempore, sequi qui impedit ut in maxime laborum provident odio, numquam ea et asperiores unde nemo totam optio voluptatibus architecto magnam, animi quae nulla!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero corporis hic ducimus ullam asperiores nostrum! Explicabo minus blanditiis iure cum maiores, temporibus, ab laborum, enim alias cumque eius magni! Ipsam illo veritatis in corporis odio sint voluptatum labore eaque cupiditate saepe, beatae tenetur excepturi molestias porro deserunt laudantium sapiente ducimus veniam. Esse voluptatem necessitatibus tempore, sequi qui impedit ut in maxime laborum provident odio, numquam ea et asperiores unde nemo totam optio voluptatibus architecto magnam, animi quae nulla!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero corporis hic ducimus ullam asperiores nostrum! Explicabo minus blanditiis iure cum maiores, temporibus, ab laborum, enim alias cumque eius magni! Ipsam illo veritatis in corporis odio sint voluptatum labore eaque cupiditate saepe, beatae tenetur excepturi molestias porro deserunt laudantium sapiente ducimus veniam. Esse voluptatem necessitatibus tempore, sequi qui impedit ut in maxime laborum provident odio, numquam ea et asperiores unde nemo totam optio voluptatibus architecto magnam, animi quae nulla!</p> -->
+
+    <script src="api.js "></script>
+</body>
+</html>

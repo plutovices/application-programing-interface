@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #292a2d; */
+}
+
+body{
+    background-color: aliceblue;
+}
+
+i{
+    cursor: pointer;
+}
+
+.logo, a{
+    color: aliceblue;   
+}
+
+.logo{
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.links{
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_search{
+    margin: 0 10px;
+    max-width: 525px;
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    max-width: 450px;
+    width: 100%;
+    height: 37px;
+     border: 2px none #deedff;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+
+input{
+    animation: reveal 1.5s ease-in-out ;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    height: 35px;
+    max-width: 400px;
+    width: 100%;
+    font-size: 15px;font-family: "Sofia Sans", serif;
+}
+   
+input::placeholder{
+    color: #3d444e;
+    font-size: 15px;
+}
+
+input
+
+input:active{
+    background-color: #0e192b00;
+    border: none;
+   
+
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.top_left{
+    margin: 0 15px;
+    animation: reveal1 1.5s ease-in-out ;
+}
+
+.top_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    animation: reveal 1.5s ease-in-out ;
+}
+
+.top_right button{
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    border-radius: 6px;
+    height: 29px;
+    font-family: "Josefin Sans", serif;
+}
+
+.top_center{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 800px;
+    width: 100%;
+    padding-right: 25px;
+}
+.top_right a{
+    text-decoration: none ;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    width: 62px;
+    justify-content: space-between;
+}
+
+#navbar{
+    width: 100%;
+    height: 130px;
+    padding: 30px;
+    background-color: #173e77;
+    box-shadow: 0px 0px 6px 3px #001210;
+    
+}
+
+#navbar.sticky{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bottom li{
+    color: #fff;
+    list-style: none;
+    margin: 5px;
+    font-family: "Sofia Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all .5s ease;
+    animation: reveal1 1.5s ease-in-out ;
+}
+
+.bottom li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.links a{
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.intro_section{
+    width: 100;
+    max-width: 1100px;
+    margin:  20px auto;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+
+}
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: reveal1 1.5s ease-in-out ;
+}
+
+.text1 p{
+    font-family: "Sofia Sans", serif;
+    font-size: 25px;
+}
+
+.weather{
+    width: 190px;
+    height: 75px;
+    background-color: #0f60d6;
+    border-radius: 9px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .35s ease-out background-color;
+    
+}
+
+#arrow{
+    transition: 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.right_weather{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75px;
+}
+
+.left_weather{
+    display: flex;
+    align-items: right;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.left_weather p{
+    color: #fff;
+    font-family: "Sofia Sans", serif;
+}
+
+
+.sun{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+}
+
+.weather:hover{
+
+    cursor: pointer;
+    background-color: #093474;
+    #arrow{
+        transform: rotate(-90deg);
+    }
+    
+}
+
+i#sunny {
+    animation: reveal1 1.2s ease-in-out ;
+}
+
+i#cloudy{
+    animation: reveal 1.2s ease-in-out;
+}
+
+@keyframes reveal1{
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes reveal{
+    0%{
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* #0f60d6
+  #2295f2
+*/
+
+.news_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    margin: 30px auto 30px auto;
+    height: 395px;
+}
+
+
+.newscard1{
+    width: 640px;
+    height: 490px;
+    background-color: #fff;
+    box-shadow:  1px 3px 5px 1px #ced3da;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.first  p{
+    text-decoration: none;
+     font-family: "Sofia Sans", serif;
+}
+
+h1{
+    font-family: "Sofia Sans", serif;
+}
+.newscard3{
+    width: 100%;
+    height: 270px;
+    background-color: #fff;
+    box-shadow:  1px 3px 5px 1px #ced3da;
+    padding: 7px;
+    border-radius: 12px;
+}
+.newscard2{
+    padding: 7px;
+    width: 300px;
+    height: 490px;
+    background-color: #173e77;
+    box-shadow:  1px 3px 5px 1px #354255;
+    border-radius: 12px;
+}
+
+
+
+/* 7b613f8b274d4f108f392431250702 */
