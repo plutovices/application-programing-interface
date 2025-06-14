@@ -372,7 +372,7 @@ h1{
 
 .newscard2:hover .img_overlay{
     cursor: pointer;
-    transform: scale(1.19);
+    transform: scale(1.14);
 }
 
 .heading-text{
@@ -381,21 +381,35 @@ h1{
 }
 
 .heading-text p{
-    color: #322727;
+    color: #5e5555;
     font-family: "Sofia Sans", serif;
-    transition: text-decoration ease .3s ;
 }
 
 .main1{
-    
+    position: relative;
+    font-size: 26px;
+    font-weight: 600
 }
 
- .heading-text p::after{
+.main2{
+    font-size: 19px;
+}
+
+/* .main1::after, .main2::after{
     content: "";
-    border-bottom: 2px ;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #5e5555;
+    left: 0;
+    bottom: 0;
+} */
+
+/* .newscard2:hover .main1::after{
+    width: 120px;
 }
 
+.newscard2:hover .main1::after{
+    width: 100%;
+} */
 
-
-
-/* 7b613f8b274d4f108f392431250702 */
