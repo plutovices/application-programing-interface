@@ -336,7 +336,7 @@ i#cloudy{
     object-fit: cover;         /* Keeps aspect ratio and fills container */
     width: 100%;
     height: 100%;
-    transition: all ease-in .5s;
+    transition: all ease 1s;
 }
 
 .first  p{
@@ -365,14 +365,11 @@ h1{
     overflow: hidden;
 }
 
-.newscard2:hover .img_overlay{
-    cursor: pointer;
-    transform: scale(1.19);
-}
+
 
 .newscard2:hover .img_overlay{
     cursor: pointer;
-    transform: scale(1.14);
+    transform: scale(1.09);
 }
 
 .heading-text{
