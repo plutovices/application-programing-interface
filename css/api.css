@@ -291,18 +291,16 @@ i#cloudy{
 @keyframes reveal{
     0%{
         opacity: 0;
-        transform: translateX(15px);
+        transform: translateY(-15px);
     }
     100%{
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
 
-/* #0f60d6
-  #2295f2
-*/
+
 
 .news_container{
     display: flex;
@@ -324,29 +322,10 @@ i#cloudy{
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
-.newscard2{
-    
-}
 
-.img_overlay{
-    /* background-image: url(download.jfif); */
-    object-fit: cover;         /* Keeps aspect ratio and fills container */
-    width: 100%;
-    height: 100%;
-    transition: all ease 1s;
-}
 
-.first  p{
-    text-decoration: none;
-     font-family: "Sofia Sans", serif;
-}
-
-h1{
-    font-family: "Sofia Sans", serif;
-}
 .newscard3{
     width: 100%;
     height: 270px;
@@ -355,6 +334,7 @@ h1{
     padding: 7px;
     border-radius: 12px;
 }
+
 .newscard2{
     position: relative;
     width: 365px;
@@ -366,47 +346,46 @@ h1{
 }
 
 
-
-.newscard2:hover .img_overlay{
-    cursor: pointer;
-    transform: scale(1.09);
+.news_container1 > div{
+    background-color: white;
+    box-shadow:  0 1px 0 #ced3da;
+    border-radius: 10px;
 }
 
-.heading-text{
-    position: absolute;
-    margin: 10px;
-}
-
-.heading-text p{
-    color: #5e5555;
-    font-family: "Sofia Sans", serif;
-}
-
-.main1{
-    position: relative;
-    font-size: 26px;
-    font-weight: 600
-}
-
-.main2{
-    font-size: 19px;
-}
-
-/* .main1::after, .main2::after{
-    content: "";
-    position: absolute;
-    height: 3px;
+.news_container1{
+    display: grid;
+    grid-template-columns: minmax(400px, 745px) 375px;
+    grid-template-rows: repeat(3 , 210px);
+    grid-gap: 10px 12px;
+    max-width: 1100px;
     width: 100%;
-    background-color: #5e5555;
-    left: 0;
-    bottom: 0;
-} */
-
-/* .newscard2:hover .main1::after{
-    width: 120px;
+    margin: 30px auto 30px auto;
 }
 
-.newscard2:hover .main1::after{
+.box-card1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container{
     width: 100%;
-} */
+    height: 530px;
+    background-color: #173e77;
+    border-radius: 11px;
+}
+
+.box-card2{
+    padding: 6px;
+}
+
+
+
+
+
+
 
