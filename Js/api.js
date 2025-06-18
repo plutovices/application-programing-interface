@@ -12,9 +12,10 @@ console.log("hey i am working");
 fetch(url)
     .then(response => response.json())
     .then(data => {
+        console.log(data)
         const date = data.current.last_updated;
         let febr = date.slice(8,11);
-        document.getElementById("date").innerHTML = "Monday, " + febr + month1;
+        document.getElementById("date").innerHTML = "Wednesday, " + febr + month1;
 
         let temp = data.current.temp_c;
         document.getElementById("temperature").innerHTML = Math.floor(temp) + "°C"; 
