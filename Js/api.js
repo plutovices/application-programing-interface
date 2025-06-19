@@ -12,7 +12,7 @@ console.log("hey i am working");
 fetch(url)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         const date = data.current.last_updated;
         let febr = date.slice(8,11);
         document.getElementById("date").innerHTML = "Wednesday, " + febr + month1;
