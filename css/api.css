@@ -420,6 +420,19 @@ i#cloudy{
     border-radius: 12px;
     text-align: center;
     animation: reveal2 1.5s ease-in-out ;
+    position: relative;
+}
+
+.newscard3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 3;
 }
 
 
@@ -428,7 +441,7 @@ i#cloudy{
 }
 
 
-/* .image3{
+.image3{
     background: url(../img/kobe.jpg);
     background-size: cover;    
     background-position: center;
@@ -440,7 +453,14 @@ i#cloudy{
     background-size: cover;    
     background-position: center;
     background-repeat: no-repeat;  
-} */
+}
+
+.image4{
+    background: url(../img/antman.jpg);
+    background-size: cover;    
+    background-position: top;
+    background-repeat: no-repeat;  
+}
 
 .box-title{
     font-family: 'Roboto Condensed', sans-serif;
@@ -450,8 +470,15 @@ i#cloudy{
     background-repeat: no-repeat; 
     text-transform: uppercase;
     font-weight: 700;
-    color: #093474;
+    color: #fff;
     width: 240px;
+    z-index: 5;
+}
+
+.newscard3 .publisher-date > p{
+    z-index: 4;
+    color: #e6e0e0;
+    font-weight: 700;
 }
 
 
