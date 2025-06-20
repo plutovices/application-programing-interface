@@ -18,7 +18,7 @@ fetch(url)
         document.getElementById("date").innerHTML = "Wednesday, " + febr + month1;
 
         let temp = data.current.temp_c;
-        document.getElementById("temperature").innerHTML = Math.floor(temp) + "°C"; 
+        document.getElementById("temperature").innerHTML = Math.ceil(temp) + "°C"; 
     })
     .catch(error => error)
 
