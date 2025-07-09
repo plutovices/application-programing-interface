@@ -423,7 +423,7 @@ i#cloudy{
     position: relative;
 }
 
-.newscard3::after{
+.newscard3::after, .right-side::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -435,6 +435,25 @@ i#cloudy{
     z-index: 3;
 }
 
+.right-side::before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/pink.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .35s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.right-side:hover::before {
+    transform: scale(1.15);
+}
 
 .newscard3:hover{
     cursor: pointer;
@@ -448,14 +467,29 @@ i#cloudy{
     background-repeat: no-repeat;  
 }
 
-.image2{
+.image5{
     background: url(../img/Chess.jpg);
     background-size: cover;    
     background-position: center;
     background-repeat: no-repeat;  
 }
 
-.image4{
+.image3{
+    background: url(../img/danfo.jpg);
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+
+.image2{
+    background: url(../img/danfo.jpg);
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.image1{
     background: url(../img/antman.jpg);
     background-size: cover;    
     background-position: top;
@@ -490,7 +524,15 @@ i#cloudy{
 .sub-heading{
    font-family: "Montserrat", sans-serif;
   /* font-style: italic; */
-  font-weight: 400;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+.right-side:hover{
+    cursor: pointer;
+    /* background-size: scale; */
 }
 
 
@@ -625,3 +667,35 @@ input:focus{
     }
 }
 
+.last-section{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-card3{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    width: 216px;
+    flex-direction: column;
+    padding: 6px;
+    animation: reveal3 2s ease-in-out;
+}
+
+.last-section .text-area{
+    gap: 3px;
+}
+
+.img-container4{
+    background: url(../img/Donald.jfif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    max-width: 235px;
+    min-width: 205px;
+    height: 290px;
+    background-color: #173e77;
+    border-radius: 11px;
+    flex-shrink: 0;
+}
