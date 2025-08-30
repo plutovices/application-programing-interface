@@ -445,7 +445,7 @@ i#cloudy{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform .35s ease;
+    transition: transform 1s ease;
     position: relative;
     overflow: hidden;
     z-index: 2;

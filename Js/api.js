@@ -1,3 +1,4 @@
+import axios from "axios";
 const navbar = document.getElementById("navbar");
 const apiKey = "7b613f8b274d4f108f392431250702";
 const city = "Akure";
@@ -7,7 +8,6 @@ const scrollers = document.querySelectorAll('.scroller')
 
 const date = new Date();
 let month1 = month[date.getMonth()]
-console.log("hey i am working");
 
 fetch(url)
     .then(response => response.json())
@@ -24,6 +24,7 @@ fetch(url)
 
 if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     addAnimation();
+    console.log("meant to be moving");
 }
 
 function addAnimation(){
@@ -41,3 +42,28 @@ function addAnimation(){
     });
 
 }
+
+
+
+
+async function publishNews() {
+  try {
+    const res = await axios.get("https://newsapi.org/v2/top-headlines", {
+      params: {
+        country: "gb",   
+        apiKey: API_KEY,
+      },
+    });
+
+    const articles = res.data
+    console.log(articles);
+    // articles.forEach((article, index) => {
+    //   console.log(`${index + 1}. ${article.title} (${article.source.name})`);
+    // });
+
+  } catch (err) {
+    console.error("Error fetching news:", err.message);
+  }
+}
+
+publishNews();
