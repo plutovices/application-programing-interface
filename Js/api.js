@@ -1,11 +1,11 @@
-import axios from "axios";
+// import axios from "https://cdn.jsdelivr.net/npm/axios@1.6.2/dist/axios.min.js";
 const navbar = document.getElementById("navbar");
 const apiKey = "7b613f8b274d4f108f392431250702";
 const city = "Akure";
 const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const scrollers = document.querySelectorAll('.scroller')
-
+const API_KEY = "7db00a4e59e14054ad9174e6f33dcc2c";
 const date = new Date();
 let month1 = month[date.getMonth()]
 
@@ -33,6 +33,7 @@ function addAnimation(){
 
         const scrollerInner = document.querySelector('.scroller_inner');
         const scrollerContent = Array.from(scrollerInner.children);
+        console.log(scrollerContent)
 
         scrollerContent.forEach((item) => {
             const duplicatedItems = item.cloneNode(true);
